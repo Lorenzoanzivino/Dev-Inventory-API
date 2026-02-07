@@ -99,7 +99,7 @@ Il **Repository** _("DAO")_ - _"repository/ResourceRepository.java"_ astrae comp
 
 - Utilizza Spring Data JPA
 - Evita la scrittura manuale di query SQL
-- Esente _"JpaRepository"_ ottienendo i metodi CRUD standard (save, findById, delete, ecc.) senza scrivere codice. È il vero vantaggio pratico.
+- Estende _"JpaRepository"_ ottienendo i metodi CRUD standard (save, findById, delete, ecc.) senza scrivere codice. È il vero vantaggio pratico.
 - Rende il codice indipendente dal database specifico
 
 Questo approccio consente di cambiare DBMS con impatto minimo sul codice applicativo.
