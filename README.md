@@ -99,7 +99,7 @@ Il **Repository** _("DAO")_ - _"repository/ResourceRepository.java"_ astrae comp
 
 - Utilizza Spring Data JPA
 - Evita la scrittura manuale di query SQL
-- Esente _"JpaRepository"_ ottienendo i metodi CRUD standard (save, findById, delete, ecc.) senza scrivere codice. È il vero vantaggio pratico.
+- Estende _"JpaRepository"_ ottienendo i metodi CRUD standard (save, findById, delete, ecc.) senza scrivere codice. È il vero vantaggio pratico.
 - Rende il codice indipendente dal database specifico
 
 Questo approccio consente di cambiare DBMS con impatto minimo sul codice applicativo.
@@ -147,6 +147,20 @@ In un ambiente di produzione:
 
 - verrebbe disabilitato
 - oppure sostituito da migrazioni strutturate (es. Flyway o Liquibase)
+
+---
+
+## Demo e Test API
+
+Di seguito sono riportati i test effettuati tramite l'estensione Postman per verificare il corretto funzionamento degli endpoint.
+
+### 1. Recupero Risorse (GET)
+L'endpoint `/api/resources` restituisce la lista completa delle risorse salvate nel database.
+![GET Resources](screenshots/get-all-resources.png)
+
+### 2. Inserimento Nuova Risorsa (POST)
+L'invio di un payload JSON valido all'endpoint `/api/resources` crea correttamente una nuova voce.
+![POST Resource](screenshots/post-new-resource.png)
 
 ---
 
