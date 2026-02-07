@@ -150,6 +150,20 @@ In un ambiente di produzione:
 
 ---
 
+## Demo e Test API
+
+Di seguito sono riportati i test effettuati tramite l'estensione Postman per verificare il corretto funzionamento degli endpoint.
+
+### 1. Recupero Risorse (GET)
+L'endpoint `/api/resources` restituisce la lista completa delle risorse salvate nel database.
+![GET Resources](screenshots/get-all-resources.png)
+
+### 2. Inserimento Nuova Risorsa (POST)
+L'invio di un payload JSON valido all'endpoint `/api/resources` crea correttamente una nuova voce.
+![POST Resource](screenshots/post-new-resource.png)
+
+---
+
 ## Conclusione
 
 Questa architettura segue principi consolidati di progettazione software:
